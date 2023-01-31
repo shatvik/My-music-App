@@ -20,6 +20,14 @@ window.addEventListener("load", () => {
 
 var songs = [
   {
+    name: "Pata nahi kis roop me aakar",
+    src: "Ram_Darshan.mp3",
+  },
+  {
+    name: "The Boys (Bones)",
+    src: "Bones.mp3",
+  },
+  {
     name: "Party With Jagaban",
     src: "Midas_The_Jagaban_PartyWithAJagaban.mp3",
   },
