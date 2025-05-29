@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-Player-enhanced</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/music-icon.jpg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/922b61b702.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="music-box">
+      <div class="music-title-box">
+        <h2 class="music-name">hello everyone</h2>
+      </div>
+      <div class="music-image-box">
+        <img class="image-tag" alt="Image - icon" />
+      </div>
+      <!-- just created -->
+      <div class="music-effect-box"><div class="speedeffect"><span>PlaySpeed  </span><span class="writespeed">1 x</span></div><div class="playspeed-cover"><input type="range" class="playspeed" min="0.25" max="2" step="0.25" value="1"></div><div class="soundbar-box"><i class="fa-solid fa-volume-off vol"></i><input class="playspeed soundbar" type="range" min="0" max="1" value="0.6" step="0.1"><i class="fa-solid fa-volume-high vol"></i></div></div>
+      <div class="music-control-box">
+        <audio class="song-here"><source type="audio/mpeg"></source></audio>
+        <input type="range" class="music-progress-bar" value="0"/>
+        <div class="timers">
+          <span class="current-time">0:00</span>
+          <span class="total-time">0:00</span>
+        </div>
+        <div class="control-buttons">
+          <button class="shuffle-button btn">
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button class="btn backward-button">
+            <i class="fa-solid fa-backward-step"></i>
+          </button>
+          <button class="btn play-button active-btn">
+            <i class="fa-solid fa-play" id="p"></i>
+          </button>
+          <button class="btn forward-button">
+            <i class="fa-solid fa-forward-step"></i>
+          </button>
+          <button class="repeat-button btn">
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -18,13 +18,42 @@
         <h2 class="music-name">hello everyone</h2>
       </div>
       <div class="music-image-box">
+        <!-- <div class="glow-ring"></div> -->
         <img class="image-tag" alt="Image - icon" />
+        <canvas class="audio-visualizer"></canvas>
       </div>
-      <!-- just created -->
-      <div class="music-effect-box"><div class="speedeffect"><span>PlaySpeed  </span><span class="writespeed">1 x</span></div><div class="playspeed-cover"><input type="range" class="playspeed" min="0.25" max="2" step="0.25" value="1"></div><div class="soundbar-box"><i class="fa-solid fa-volume-off vol"></i><input class="playspeed soundbar" type="range" min="0" max="1" value="0.6" step="0.1"><i class="fa-solid fa-volume-high vol"></i></div></div>
+      <div class="music-effect-box">
+        <div class="speedeffect">
+          <span>PlaySpeed</span><span class="writespeed">1 x</span>
+        </div>
+        <div class="playspeed-cover">
+          <input
+            type="range"
+            class="playspeed"
+            min="0.25"
+            max="2"
+            step="0.25"
+            value="1"
+          />
+        </div>
+        <div class="soundbar-box">
+          <i class="fa-solid fa-volume-off vol"></i>
+          <input
+            class="playspeed soundbar"
+            type="range"
+            min="0"
+            max="1"
+            value="0.6"
+            step="0.1"
+          />
+          <i class="fa-solid fa-volume-high vol"></i>
+        </div>
+      </div>
       <div class="music-control-box">
-        <audio class="song-here"><source type="audio/mpeg"></source></audio>
-        <input type="range" class="music-progress-bar" value="0"/>
+        <audio class="song-here">
+          <source type="audio/mpeg" />
+        </audio>
+        <input type="range" class="music-progress-bar" value="0" />
         <div class="timers">
           <span class="current-time">0:00</span>
           <span class="total-time">0:00</span>
